@@ -29,14 +29,14 @@ public class Grades {
     }
     public void checkSumGrades() {
      for (this.size = 0; this.size <=10; this.size++)
-         this.grades[this.size] =+ this.grades[this.size++];
+         this.grades[this.size] += this.grades[this.size++];
 
     }
-    public void checkAverageGrades() {   //totalnie nie mam pomysłu jak to prosto zrobić i czy wgl dobrze myślę
-    public void checkSumGrades()
-        for (this.size = 0; this.size <=10; this.size++)
-            this.grades[this.size] =+ this.grades[this.size++];
-        calkowita = (checkSumGrades/10);
-        reszta = (checkSumGrades()%10);
+    public int average() {
+        int sumUp = 0;
+        for (int i = 0; i < grades.length; i++) {
+            sumUp += grades[i];
+        }
+        return sumUp / grades.length;
     }
 }
